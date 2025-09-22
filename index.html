@@ -252,40 +252,12 @@
         </div>
 
         <div class="contact-form">
-          <form id="booking-form">
-            <div class="form-group">
-              <label for="name">Nimi *</label>
-              <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Sähköposti *</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label for="company">Yritys/Organisaatio</label>
-              <input type="text" id="company" name="company">
-            </div>
-            <div class="form-group">
-              <label for="service">Palvelu *</label>
-              <select id="service" name="service" required>
-                <option value="">Valitse palvelu</option>
-                <option value="keynote">Keynote-puhe</option>
-                <option value="workshop">Johtajuusvalmennus</option>
-                <option value="corporate">Yritysvalmennus</option>
-                <option value="consultation">Konsultaatio</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="date">Toivottu ajankohta</label>
-              <input type="date" id="date" name="date">
-            </div>
-            <div class="form-group">
-              <label for="message">Lisätiedot</label>
-              <textarea id="message" name="message" rows="4"
-                placeholder="Kerro lisää tapahtumasta, osallistujamäärästä ja erityistoiveista..."></textarea>
-            </div>
-            <button type="submit" class="btn-primary">Lähetä tarjouspyyntö</button>
-          </form>
+          <!-- Calendly inline widget begin -->
+          <div class="calendly-inline-widget"
+            data-url="https://calendly.com/juho-incompleteleader/opi-mokaamaan-johtajana?primary_color=ba3020"
+            style="min-width:320px;height:700px;"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+          <!-- Calendly inline widget end -->
         </div>
       </div>
     </div>
