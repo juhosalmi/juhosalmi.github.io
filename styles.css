@@ -369,10 +369,30 @@ p {
     transform: translateY(-5px);
 }
 
-.service-icon {
+.service-icon { /* TODO: remove this */
     text-align: center;
     font-size: 3rem;
     margin-bottom: 1rem;
+}
+
+.service-illustration {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(247, 220, 187, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--secondary-color);
+    margin: 0 auto 1rem; /* center within card and add spacing below */
+}
+
+.service-illustration img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fill the circle without distortion */
+    border-radius: 50%;
+    display: block;
 }
 
 .service-card h3 {
