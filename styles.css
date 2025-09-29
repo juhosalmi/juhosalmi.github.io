@@ -342,8 +342,8 @@ a {
 }
 
 .profile-picture {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     background-color: rgba(247, 220, 187, 0.1);
     border-radius: 50%;
     display: flex;
@@ -367,6 +367,38 @@ a {
     color: var(--primary-color);
     font-size: 2.5rem;
     font-weight: 400;
+}
+
+.profile-links {
+    text-align: center;
+}
+
+.profile-links a {
+    color: var(--text-dark);
+}
+
+/* Contact card styling for Juho section */
+.profile-image {
+    background-color: var(--secondary-color);
+    padding: 1.25rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.profile-links p {
+    margin: 0.15rem 0;
+}
+
+@media (max-width: 768px) {
+    .profile-image {
+        width: 100%;
+    }
 }
 
 /* Mobile placement for profile image in About */
