@@ -369,6 +369,23 @@ a {
     font-weight: 400;
 }
 
+/* Mobile placement for profile image in About */
+.profile-image--mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    /* Hide desktop profile image on mobile */
+    .about-content > .profile-image:not(.profile-image--mobile) {
+        display: none;
+    }
+    /* Show the mobile-placed image under the heading */
+    .profile-image--mobile {
+        display: block;
+        margin: 1rem 0 1.5rem 0;
+    }
+}
+
 /* Services Section */
 .services {
     padding: 80px 0;
@@ -760,7 +777,7 @@ a {
 }
 
 /* Responsive Design */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .hamburger {
         display: flex;
     }
