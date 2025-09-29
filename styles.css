@@ -376,22 +376,19 @@ p {
 }
 
 .service-illustration {
-    width: 300px;
-    height: 300px;
+    width: 100%;                 /* fill the card's inner width (respects padding) */
+    aspect-ratio: 1 / 1;         /* keep it a perfect circle */
     background-color: rgba(247, 220, 187, 0.1);
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;            /* clip the image to the circle */
     border: 3px solid var(--secondary-color);
-    margin: 0 auto 1rem; /* center within card and add spacing below */
+    margin: 0 auto 1rem;         /* center within card and add spacing below */
 }
 
 .service-illustration img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* fill the circle without distortion */
-    border-radius: 50%;
+    object-fit: cover;           /* fill the circle without distortion */
     display: block;
 }
 
