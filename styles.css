@@ -939,3 +939,163 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* -----------------------------
+   Opi mokaamaan (opimokaamaan/)
+   ----------------------------- */
+
+/* Layout / copy helpers used on the keynote landing page */
+.section-lead {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 2rem;
+}
+
+.split {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+@media (max-width: 900px) {
+    .split {
+        grid-template-columns: 1fr;
+    }
+}
+
+.kicker {
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+}
+
+.muted {
+    color: var(--text-light);
+}
+
+.price-callout {
+    background: var(--secondary-color);
+    border-radius: var(--border-radius);
+    padding: 1.2rem;
+    box-shadow: var(--shadow);
+}
+
+.price-big {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin: 0.2rem 0 0.4rem;
+}
+
+.price-big--spaced {
+    margin-top: 0.6rem;
+}
+
+.hr {
+    height: 1px;
+    background: #e2e2e2;
+    margin: 1rem 0;
+}
+
+.tight p {
+    margin-bottom: 0.6rem;
+}
+
+.hero-cta--spaced {
+    margin-top: 1.6rem;
+}
+
+.mini-note {
+    font-size: 0.95rem;
+}
+
+.mini-note--centered {
+    text-align: center;
+}
+
+.mini-note--spaced {
+    margin-top: 1rem;
+}
+
+.mini-note--spaced-lg {
+    margin-top: 1.5rem;
+}
+
+.mini-note--subtle {
+    opacity: 0.9;
+}
+
+.btn--spaced {
+    margin-top: 1rem;
+}
+
+.services--light {
+    background: #f5f5f5;
+}
+
+.contact-lead {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* FAQ details -elementeille (ei vaadi JS:ää) */
+.faq {
+    padding: 80px 0;
+    background: var(--white);
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.faq-grid {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: #f5f5f5;
+    border-radius: var(--border-radius);
+    padding: 1rem 1.2rem;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 400;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.faq-item p {
+    margin-top: 0.75rem;
+}
+
+.badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1rem;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.6rem;
+    border-radius: 999px;
+    background: rgba(186, 48, 32, 0.08);
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+
+/* Calendly embed sizing moved from inline styles */
+.calendly-inline-widget {
+    min-width: 320px;
+    height: 700px;
+}
