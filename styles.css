@@ -675,6 +675,50 @@ a {
     font-weight: 300;
 }
 
+.testimonials-keynote {
+    margin-top: 3rem;
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+    padding: 2.5rem 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.testimonials-keynote-title {
+    text-align: left;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.testimonials-keynote-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-keynote-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.testimonial-keynote-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.testimonial-keynote-card p {
+    margin-bottom: 0;
+}
+
 /* Contact Section */
 .contact {
     background-color: #e6e6e6;
