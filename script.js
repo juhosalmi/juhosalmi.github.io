@@ -138,6 +138,49 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Price calculator for "Opi mokaamaan"
+    const pcForm = document.getElementById('price-calculator-form');
+    if (pcForm) {
+        const modeEl = document.getElementById('pc-mode');
+        const participantsEl = document.getElementById('pc-participants');
+        const formatEl = document.getElementById('pc-format');
+        const totalEl = document.getElementById('pc-total');
+
+        function updatePrice() {
+            const mode = modeEl.value;
+            const participants = participantsEl.value;
+            const format = formatEl.value;
+
+            let base = 1900;
+            if (format === 'keynote_workshop') {
+                base = 2900;
+            }
+
+            let modifier = 0;
+
+            if (mode === 'remote') {
+                modifier -= 400;
+            } 
+
+            if (participants === 'medium') {
+                modifier += 400;
+            } else if (participants === 'large') {
+                modifier += 700;
+            } else if (participants === 'xlarge') {
+                modifier += 1000;
+            }
+
+            const total = base + modifier;
+            totalEl.textContent = `${total.toLocaleString('fi-FI')} € + ALV`;
+        }
+
+        [modeEl, participantsEl, formatEl].forEach(el => {
+            el.addEventListener('change', updatePrice);
+        });
+
+        updatePrice();
+    }
+
     // Service card interactive features
     document.querySelectorAll('.service-card').forEach(card => {
         const features = card.querySelector('.service-features');

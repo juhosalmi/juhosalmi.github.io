@@ -289,7 +289,7 @@
 
       <div class="services-grid">
         <div class="service-card service-card--outlined">
-          <h3>Keynote (20–60 min)</h3>
+          <h3>Opi mokaamaan -keynote (45–60 min)</h3>
           <p class="price-big price-big--spaced">alk. 1900 € + ALV</p>
           <div class="service-features">
             <ul>
@@ -302,7 +302,7 @@
         </div>
 
         <div class="service-card service-card--outlined">
-          <h3>Keynote + työpaja (1–2 h)</h3>
+          <h3>Opi mokaamaan -keynote ja työpaja (1,5–3 h)</h3>
           <p class="price-big price-big--spaced">alk. 2900 € + ALV</p>
           <div class="service-features">
             <ul>
@@ -316,15 +316,58 @@
 
         <div class="service-card service-card--outlined">
           <h3>Lisäpalikat (valinnaiset)</h3>
-          <p>Kun haluat, että tämä jää elämään.</p>
+          <p>Kun haluat, että tämä jää elämään. Sovitaan näistä hinta erikseen.</p>
           <div class="service-features">
             <ul>
-              <li>Räätälöity case / “talon tarinat” (lisähinta)</li>
-              <li>Seurantakysely / mini-mittaus (lisähinta)</li>
-              <li>Jatko: johtamisen treeniohjelma (8 viikkoa) (erillinen tarjous)</li>
+              <li>Räätälöinti juuri teille (+1000 €)</li>
+              <li>Tilannekartoitus (+1000 €)</li>
+              <li>Jatko: johtamisen treeniohjelma (8 viikkoa, alk. 4900 €)</li>
             </ul>
           </div>
           <a href="https://bossdeveloper.com" class="btn-secondary btn--spaced">Katso muut palvelut</a>
+        </div>
+      </div>
+
+      <div class="price-calculator">
+        <h3>Laske hinta</h3>
+        <p class="mini-note">
+          Keynoten hinta riippuu toteutustavasta ja osallistujien määrästä. Laske hinta ja tee alustava varaus suoraan kalenteristani!
+        </p>
+
+        <form id="price-calculator-form" class="price-calculator__form">
+          <div class="price-calculator__field">
+            <label for="pc-mode">Toteutus</label>
+            <select id="pc-mode" name="mode">
+              <option value="live">Livenä</option>
+              <option value="remote">Etänä</option>
+            </select>
+          </div>
+
+          <div class="price-calculator__field">
+            <label for="pc-participants">Osallistujia</label>
+            <select id="pc-participants" name="participants">
+              <option value="small">alle 20</option>
+              <option value="medium">20–49</option>
+              <option value="large">50–99</option>
+              <option value="xlarge">100+</option>
+            </select>
+          </div>
+
+          <div class="price-calculator__field">
+            <label for="pc-format">Ohjelma</label>
+            <select id="pc-format" name="format">
+              <option value="keynote">Keynote 45–60 min</option>
+              <option value="keynote_workshop">Keynote + työpaja 1,5–3 h</option>
+            </select>
+          </div>
+        </form>
+
+        <div class="price-calculator__result">
+          <p class="price-calculator__label">Hinta</p>
+          <p class="price-calculator__value" id="pc-total">1900 € + ALV</p>
+          <p class="mini-note mini-note--subtle">
+            Sisältää matkakulut.
+          </p>
         </div>
       </div>
     </div>
@@ -366,10 +409,6 @@
           </div>
         </div>
       </div>
-
-      <p class="mini-note mini-note--centered mini-note--spaced-lg mini-note--subtle">
-        Lisää referenssejä ja caseja: pyydä viestillä.
-      </p>
     </div>
   </section>
 
