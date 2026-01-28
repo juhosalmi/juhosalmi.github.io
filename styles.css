@@ -100,11 +100,9 @@ a {
 }
 
 /* Buttons */
-.btn-primary {
-    background-color: var(--primary-color);
-    color: var(--white);
+.btn-primary,
+.btn-secondary {
     padding: 15px 30px;
-    border: 2px solid var(--primary-color);
     border-radius: var(--border-radius);
     font-family: 'Londrina Solid', sans-serif;
     font-size: 1.1rem;
@@ -116,6 +114,12 @@ a {
     box-shadow: var(--shadow);
 }
 
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: 2px solid var(--primary-color);
+}
+
 .btn-primary:hover {
     background-color: #9A2818;
     transform: translateY(-2px);
@@ -125,16 +129,7 @@ a {
 .btn-secondary {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    padding: 15px 30px;
     border: 2px solid var(--primary-color);
-    border-radius: var(--border-radius);
-    font-family: 'Londrina Solid', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 400;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
@@ -405,9 +400,18 @@ a {
     }
 }
 
+/* Section layout */
+.services,
+.about,
+.pelikirja,
+.testimonials,
+.contact,
+.faq {
+    padding: 80px 0;
+}
+
 /* Services Section */
 .services {
-    padding: 80px 0;
     background-color: var(--secondary-color);
 }
 
@@ -480,7 +484,6 @@ a {
 
 /* About Section */
 .about {
-    padding: 80px 0;
     background-color: var(--white);
 }
 
@@ -546,7 +549,6 @@ a {
 
 /* Pelikirja Section */
 .pelikirja {
-    padding: 80px 0;
     background-color: var(--secondary-color);
 }
 
@@ -616,7 +618,6 @@ a {
 
 /* Testimonials Section */
 .testimonials {
-    padding: 80px 0;
     background-color: var(--primary-color);
     color: var(--white);
 }
@@ -661,7 +662,6 @@ a {
 
 /* Contact Section */
 .contact {
-    padding: 80px 0;
     background-color: #e6e6e6;
 }
 
@@ -903,7 +903,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Animation classes */
+/* Utility: animation */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -915,11 +915,7 @@ html {
     transform: translateY(0);
 }
 
-/* -----------------------------
-   Opi mokaamaan (opimokaamaan/)
-   ----------------------------- */
-
-/* Layout / copy helpers used on the keynote landing page */
+/* Utility: layout & typography helpers (shared across pages) */
 .section-lead {
     text-align: center;
     max-width: 900px;
@@ -1037,7 +1033,6 @@ html {
 
 /* FAQ details */
 .faq {
-    padding: 80px 0;
     background: var(--white);
 }
 
