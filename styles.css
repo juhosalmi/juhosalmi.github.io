@@ -438,10 +438,6 @@ a {
     transition: transform 0.3s ease;
 }
 
-.service-card > :last-child {
-    margin-top: auto;
-}
-
 .service-card .btn-primary,
 .service-card .btn-secondary {
     align-self: center;
