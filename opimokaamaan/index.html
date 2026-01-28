@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opi mokaamaan | Keynote johtamisesta – Boss Developer</title>
+  <meta name="description"
+    content="Opi mokaamaan – 20–60 min keynote (alk. 1900 € + ALV). 100 % asiaa, 100 % show’ta, 100 % pilkettä silmäkulmassa. Satiiri herättää keskustelua ja tekee vaikeista asioista käsiteltäviä." />
+  <link rel="icon" type="image/png" href="assets/images/favicon_pomo.png" />
+  <link rel="stylesheet" href="../styles.css" />
+
+  <!-- Cookiebot / GA -->
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="89dc39ef-373c-4da1-a1d3-b509929d0f9d"
+    type="text/javascript" async></script>
+
+  <script data-cookieconsent="ignore">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      'ad_personalization': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'analytics_storage': 'denied',
+      'functionality_storage': 'denied',
+      'personalization_storage': 'denied',
+      'security_storage': 'granted',
+      'wait_for_update': 500,
+    });
+    gtag("set", "ads_data_redaction", true);
+    gtag("set", "url_passthrough", false);
+  </script>
+
+  <script type="text/plain" data-cookieconsent="statistics" async
+    src="https://www.googletagmanager.com/gtag/js?id=G-S6S36HV07T"></script>
+  <script type="text/plain" data-cookieconsent="statistics">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S6S36HV07T', { 'anonymize_ip': true });
+  </script>
+
+  <style>
+    /* Kevyt lisä: FAQ details -elementeille (ei vaadi JS:ää) */
+    .faq { padding: 80px 0; background: var(--white); }
+    .faq h2 { text-align: center; margin-bottom: 2rem; }
+    .faq-grid { max-width: 900px; margin: 0 auto; }
+    .faq-item { background: #f5f5f5; border-radius: var(--border-radius); padding: 1rem 1.2rem; margin-bottom: 1rem; box-shadow: var(--shadow); }
+    .faq-item summary { cursor: pointer; font-weight: 400; color: var(--primary-color); font-size: 1.2rem; }
+    .faq-item p { margin-top: 0.75rem; }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+    .badge { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.35rem 0.6rem; border-radius: 999px; background: rgba(186, 48, 32, 0.08); color: var(--secondary-color); font-weight: 400; font-size: 0.95rem; }
+    .mini-note { font-size: 0.95rem; }
+    .section-lead { text-align:center; max-width: 900px; margin: 0 auto 2rem; }
+    .split { display:grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; align-items: start; }
+    @media (max-width: 900px){ .split{ grid-template-columns: 1fr; } }
+    .kicker { color: var(--primary-color); font-weight: 400; font-size: 1.1rem; letter-spacing: 0.08rem; text-transform: uppercase; }
+    .muted { color: var(--text-light); }
+    .price-callout { background: var(--secondary-color); border-radius: var(--border-radius); padding: 1.2rem; box-shadow: var(--shadow); }
+    .price-big { font-size: 2.2rem; color: var(--primary-color); margin: 0.2rem 0 0.4rem; }
+    .hr { height: 1px; background: #e2e2e2; margin: 1rem 0; }
+    .tight p { margin-bottom: 0.6rem; }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <!-- Käytetään vanhaa logoa jos bossdeveloper-logo ei vielä ole assetsissa -->
+        <a href="https://bossdeveloper.com" aria-label="Boss Developer">
+          <img src="../assets/images/boss_developer_logo.png" alt="Boss Developer" class="nav-logo-img" />
+        </a>
+      </div>
+
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#miksi" class="nav-link">Miksi tämä toimii</a></li>
+        <li class="nav-item"><a href="#sisalto" class="nav-link">Sisältö</a></li>
+        <li class="nav-item"><a href="#vaihtoehdot" class="nav-link">Versiot</a></li>
+        <li class="nav-item"><a href="#hinnat" class="nav-link">Hinnat</a></li>
+        <li class="nav-item"><a href="#suositukset" class="nav-link">Palautteet</a></li>
+        <li class="nav-item"><a href="#juho" class="nav-link">Juho</a></li>
+        <li class="nav-item"><a href="#varaa" class="nav-link cta-button">Varaa</a></li>
+      </ul>
+
+      <div class="hamburger" aria-label="Avaa valikko" role="button" tabindex="0">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-subtitle">Työelämää satirisoiva keynote, joka tekee vaietut ongelmat näkyviksi</p>
+        <h1>Opi mokaamaan.</h1>
+  
+        <p class="hero-description">
+          <strong>100 % show’ta – 100 % asiaa – 100 % pilkettä silmäkulmassa.</strong><br>
+          Turvallinen, rakentava herätys satirisoimalla
+          <strong>yleisiä mutta huomaamatta syntyviä työelämän käytäntöjä</strong>
+          – ja 3–5 konkreettista tapaa toimia jatkossa fiksummin.
+        </p>
+  
+  
+        <div class="hero-cta" style="margin-top: 1.6rem;">
+          <a href="#varaa" class="btn-primary">Katso vapaat ajat</a>
+          <a href="#hinnat" class="btn-secondary">Hinnat</a>
+        </div>
+  
+        <p class="mini-note" style="margin-top: 1rem;">
+          Toimii erityisesti: johtamispäivät, kick-offit, jännitteiset muutokset ja tilanteet,
+          joissa elefantti on huoneessa.
+        </p>
+      </div>
+
+      <div class="hero-image">
+        <div class="character-illustration">
+          <img src="../assets/images/juho.jpg" alt="Juho Salmi" />
+        </div>
+        <p class="hero-caption">Puhuja: Juho Salmi</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY / FIT -->
+  <section id="miksi" class="about">
+    <div class="container">
+      <h2 class="section-title">Miksi tämä toimii?</h2>
+
+      <p class="section-lead">
+        Opi mokaamaan ei ole “harmiton puheenvuoro”, vaan turvallinen tapa haastaa johtamisen ja työn arkea:
+        <strong>ensin nauru, sitten oivallus, lopuksi konkreettiset toimintatavat</strong>.
+      </p>
+
+      <div class="split">
+        <div class="about-text tight">
+          <p class="kicker">Mitä yleisö saa?</p>
+          <p><strong>1) Kielen.</strong> Miten me oikeasti mokaamme – ja miksi.</p>
+          <p><strong>2) Peilin.</strong> Huumori laskee puolustusreaktiota ja tekee itsereflektiosta helpompaa.</p>
+          <p><strong>3) Työkalut.</strong> Muutama selkeä toimintatapa, joilla toimitaan jatkossa fiksummin.</p>
+          <div class="hr"></div>
+          <p class="kicker">Mitä tämä EI ole</p>
+          <p class="muted">
+            Ei syyllisten etsintä. Ei yksitoikkoinen kalvosulkeinen. Ei perinteinen johtamiskoulutus.
+            Tämä on opettavainen ja <strong>keskustelua herättävä puheenvuoro</strong>, jonka oppeja voidaan tuoda organisaation arkeen työpajan avulla.
+          </p>
+        </div>
+
+        <div class="price-callout">
+          <p class="kicker">Nopea yhteenveto</p>
+          <p class="price-big">Keynote alk. 1900 € + ALV</p>
+          <p>20–60 min. Halutessa 1–2 h työpaja perään (alk. 2900 € + ALV).</p>
+          <p><strong>Mihin tilanteeseen?</strong><br />
+            Johtamispäivät, kick-off, muutostilanne, jännite tai kun halutaan nostaa kissa pöydälle.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT / FLOW -->
+  <section id="sisalto" class="services">
+    <div class="container">
+      <h2 class="section-title">Mitä lavalla tapahtuu?</h2>
+      <p class="section-lead">
+        Keynote on rakennettu niin, että <strong>jokainen uskaltaa nauraa myös itselleen</strong>. Käteen jää mieleenpainuva tunnejälki, peili ja fiksummat työkalut.
+      </p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>1) Seppo Setämies avaa pelin</h3>
+          <p>
+            Satiirinen aloitus: “Näin teet strategiatyön / muutoksen / johtamisen varmasti päin honkia.”
+          </p>
+          <div class="service-features">
+            <ul>
+              <li>Rikkoo jään ja tekee vaikeista asioista turvallisia</li>
+              <li>Paljastaa hyvät ja itsekkäät aikeet huonojen käytäntöjen taustalla</li>
+              <li>Rakentaa yhteisen kielen (ja sisäpiirivitsit) loppupäivälle</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <h3>2) Mikä ajaa meidät mokaamaan?</h3>
+          <p>
+            Tunnistetaan tyypillisimmät mokat ja niiden juurisyyt: rakenteet, kannustimet, hauras itsetunto.
+          </p>
+          <div class="service-features">
+            <ul>
+              <li>Työelämän tositarinat ja yleiset huonot käytännöt</li>
+              <li>Ymmärrys siitä, miksi fiksutkin ihmiset mokaavat toistuvasti</li>
+              <li>Ei syyllistämistä – mutta ei myöskään silittelyä</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <h3>3) Toimi jatkossa fiksummin</h3>
+          <p>
+            Konkreettiset toimintatavat: mitä tehdä maanantaina, jotta sama moka ei toistu.
+          </p>
+          <div class="service-features">
+            <ul>
+              <li>3–5 käytäntöä, jotka sopivat erilaisiin rooleihin</li>
+              <li>Ohjeet fiksumpien tapojen pitkäjänteiseen käyttöönottoon</li>
+              <li>Halutessa 1–2 h työpaja: opit suoraan omaan arkeen</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p class="mini-note" style="text-align:center; margin-top: 1.5rem;">
+        Oleellisin oppi: Saa mokata, kunhan on valmis mokansa tunnustamaan ja ottamaan niistä opikseen.
+      </p>
+    </div>
+  </section>
+
+  <!-- VERSIONS -->
+  <section id="vaihtoehdot" class="services" style="background:#f5f5f5;">
+    <div class="container">
+      <h2 class="section-title">Valitse teema</h2>
+      <p class="section-lead">Sama konsepti, eri konteksti. Räätälöinti sopimuksen mukaan.</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Opi mokaamaan johtajana</h3>
+          <p>Yleisimmät johtamisen mokat – ja miten niitä ehkäistään.</p>
+          <div class="service-features">
+            <ul>
+              <li>Kontrolli, passiivisuus, epäselvyys, “hyvät aikeet – huonot vaikutukset”</li>
+              <li>Palaute, psykologinen turvallisuus, oppiminen</li>
+              <li>Sopii: first-time managers / esihenkilöpäivät / johtoryhmät</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <h3>Opi mokaamaan töissä</h3>
+          <p>Miten mokaamme työn arjessa – ja miten mokia käsitellään niin, että opitaan.</p>
+          <div class="service-features">
+            <ul>
+              <li>Jälkipyykki → oppiminen -muutos</li>
+              <li>Vastuunotto ilman syyllistämistä</li>
+              <li>Sopii: koko organisaation kick-offit</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <h3>Opi mokaamaan strategiatyössä</h3>
+          <p>Villit visiot ja hieno strategia – miksei se näy arjessa ja tuloksessa?</p>
+          <div class="service-features">
+            <ul>
+              <li>Yhteinen suunta vs. “juliste-strategia”</li>
+              <li>Priorisointi, fokus ja arjen johtaminen</li>
+              <li>Sopii: johto + avainihmiset</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <h3>Opi mokaamaan AI-projektissa</h3>
+          <p>Miten AI ei ratkaissutkaan kaikkia ongelmia – ja miksi se on hyvä uutinen.</p>
+          <div class="service-features">
+            <ul>
+              <li>Odotukset, data, käyttöönotto, muutosvastarinta</li>
+              <li>Pienet kokeilut, oppiminen ja jatkuva parantaminen</li>
+              <li>Sopii: digimuutos, tuotekehitys, johto</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <h3>Opi mokaamaan muutoshankkeessa</h3>
+          <p>Mitä “muutosvastarinta” oikeasti on – ja miksi se usein on järkevä reaktio.</p>
+          <div class="service-features">
+            <ul>
+              <li>Merkityksen rakentaminen, osallistaminen, käytännön toimeenpano</li>
+              <li>Viestintä, esimerkki ja rakenteet</li>
+              <li>Sopii: muutosohjelmat, organisaatiouudistukset</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <h3>DEIB-koulutus riistokapitalisteille</h3>
+          <p>Satiiri työelämän kylmyydestä herättämään keskustelua moninaisuuden johtamisesta.</p>
+          <div class="service-features">
+            <ul>
+              <li>100 % satiiri – 100 % vakavat seuraukset</li>
+              <li>Sopii: kun aiheesta on vaikea puhua suoraan</li>
+              <li>Rakentaa tilaa oppimiselle (ei moraalisaarnalle)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="hinnat" class="about">
+    <div class="container">
+      <h2 class="section-title">Hinnat & paketit</h2>
+      <p class="section-lead">
+        Selkeät hinnat. Räätälöinti ja lisäpalvelut erikseen. (Matkat ja mahdollinen tekniikka sopimuksen mukaan.)
+      </p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Keynote (20–60 min)</h3>
+          <p class="price-big" style="margin-top:0.6rem;">alk. 1900 € + ALV</p>
+          <div class="service-features">
+            <ul>
+              <li>Teema valitaan (johtaminen / työ / strategia / AI / muutos / DEIB)</li>
+              <li>Setämies-intro + Juho-osuus + selkeä takeaway</li>
+              <li>Sopii: johtamispäivät, kick-off, seminaarit</li>
+            </ul>
+          </div>
+          <a href="#varaa" class="btn-primary" style="margin-top: 1rem;">Kysy vapaat päivät</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Keynote + työpaja (1–2 h)</h3>
+          <p class="price-big" style="margin-top:0.6rem;">alk. 2900 € + ALV</p>
+          <div class="service-features">
+            <ul>
+              <li>Oivallus → harjoittelu → sovitut käytännöt</li>
+              <li>Toimii erityisesti “meillä on ollut kipu / kohu / jännite” -tilanteissa</li>
+              <li>Lopputuloksena yhteinen pelisääntö tai 2–3 konkreettista kokeilua</li>
+            </ul>
+          </div>
+          <a href="#varaa" class="btn-secondary" style="margin-top: 1rem;">Varaa kartoitus (30 min)</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Lisäpalikat (valinnaiset)</h3>
+          <p>Kun haluat, että tämä jää elämään.</p>
+          <div class="service-features">
+            <ul>
+              <li>Räätälöity case / “talon tarinat” (lisähinta)</li>
+              <li>Seurantakysely / mini-mittaus (lisähinta)</li>
+              <li>Jatko: johtamisen treeniohjelma (8 viikkoa) (erillinen tarjous)</li>
+            </ul>
+          </div>
+          <a href="https://bossdeveloper.com" class="btn-secondary" style="margin-top: 1rem;">Katso muut palvelut</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="suositukset" class="testimonials">
+    <div class="container">
+      <h2 class="section-title">Mitä Juhosta sanotaan?</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Juho on erinomainen sparrikumppani muutoksessa – hän kirkastaa viestisi ja tukee sinua parempaan
+              johtajuuteen."</p>
+          </div>
+          <div class="testimonial-author">
+            <strong>Desiree Saarikivi</strong>
+            <span>CHRO, Tanoma Oy</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Juho osaa kuunnella ja uskaltaa haastaa – hyvällä huumorintajulla!"</p>
+          </div>
+          <div class="testimonial-author">
+            <strong>Laura Tero</strong>
+            <span>HR Director, Gofore Oyj</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Juho on innostava esiintyjä, joka saa ajattelemaan johtamista ja muutosta uudella tavalla."</p>
+          </div>
+          <div class="testimonial-author">
+            <strong>Pekka Ahola</strong>
+            <span>CHRO, Bolt.Works</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="mini-note" style="text-align:center; margin-top: 1.5rem; opacity:0.9;">
+        Lisää referenssejä ja caseja: pyydä viestillä.
+      </p>
+    </div>
+  </section>
+
+  <!-- ABOUT JUHO -->
+  <section id="juho" class="about">
+    <div class="container">
+      <h2 class="section-title">Kuka tätä vetää?</h2>
+      <div class="about-content">
+        <div class="profile-image">
+          <div class="profile-picture">
+            <img src="../assets/images/juho.jpg" alt="Juho Salmi" />
+          </div>
+          <p class="profile-caption">Juho Salmi</p>
+          <div class="profile-links">
+            <p><a href="mailto:juho@bossdeveloper.com">juho@bossdeveloper.com</a></p>
+            <p><a href="tel:+358405377012">+358 40 537 7012</a></p>
+            <p><a href="https://linkedin.com/in/juhosalmi/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <p>
+            Olen <strong>johtamistutkija</strong> ja <strong>humoristinen tarinankertoja</strong>.
+            Työstän <em>Paskan pomon pelikirjaa</em>, joka perustuu <strong>350+ tositarinaan</strong> huonosta johtamisesta.
+          </p>
+
+          <div class="expertise-areas">
+            <h3>Tausta lyhyesti</h3>
+            <ul>
+              <li>10+ vuotta johtamisen ja tuotekehityksen ympärillä</li>
+              <li>7+ vuotta mentorina ja valmentavana johtajana</li>
+              <li>Puheenvuorot, työpajat ja treeniohjelmat: tiede + käytäntö + huumori</li>
+            </ul>
+          </div>
+
+          <div class="books-showcase">
+            <h4>Paskan pomon pelikirja</h4>
+            <p class="muted">Satiirin avulla näkyväksi se, mistä muuten vaietaan.</p>
+            <a href="https://paskapomo.com" class="btn-secondary" target="_blank" rel="noopener noreferrer">Lue mininovellit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2>FAQ</h2>
+      <div class="faq-grid">
+        <details class="faq-item">
+          <summary>Onko tämä “standuppia” vai asiaa?</summary>
+          <p>
+            Molempia: <strong>show on kuljetusmuoto</strong>, mutta sisältö on rakennettu tuottamaan oivalluksia ja käytännön
+            toimintatapoja. Tarkoitus ei ole vain viihdyttää – vaan muuttaa keskustelun tasoa.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Onko tämä turvallinen aihe? Entä jos porukka on varautunut?</summary>
+          <p>
+            Juuri siksi satiiri toimii: se laskee puolustusta. Setti on tehty niin, että myös “isot egot” voivat nauraa
+            itselleen menettämättä kasvoja – ja silti puhutaan asiaa.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Mitä tämä EI tee?</summary>
+          <p>
+            Tämä ei yksin ratkaise organisaation ongelmia. Se tekee ne näkyviksi ja antaa yhteisen kielen + ensimmäiset
+            käytännöt. Jos haluat tuloksia varmemmin, ota työpaja perään (tai jatko treeniohjelmana).
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Tekniikka ja käytännöt?</summary>
+          <p>
+            Tarvitsen perussetin: mikki, näyttö/tykki (jos käytetään muutamaa kuvaa), sekä mahdollisuuden liikkua lavalla.
+            Työpajassa hyödyllinen: pienryhmäpöydät / tila keskustelulle.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Miten varaus toimii ilman “myyntiä”?</summary>
+          <p>
+            Valitse teema ja kesto, varaa 30 min kartoitus tai laita suoraan päivämääräehdot.
+            Vastaan nopeasti ja teen selkeän tarjouksen ilman säätöä.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="varaa" class="contact">
+    <div class="container">
+      <h2>Varaa / kysy</h2>
+      <p style="text-align:center; margin-bottom: 2rem;">
+        Haluatko varata <strong>Opi mokaamaan</strong> -keynoten? Varaa 30 min kartoitus tai kysy suoraan vapaat päivät.
+      </p>
+
+      <div class="calendly-placeholder">
+        <p>
+          Varaustoiminto käyttää Calendly-palvelua, joka lataa sisältöä ulkoisesta lähteestä.
+          Näet kalenterin, kun hyväksyt evästeet. Voit myös olla yhteydessä sähköpostitse
+          <a href="mailto:juho@bossdeveloper.com">juho@bossdeveloper.com</a> tai puhelimitse
+          <a href="tel:+358405377012">+358 40 537 7012</a>.
+        </p>
+      </div>
+
+      <!-- Calendly embed (evästeiden taakse) -->
+      <script type="text/plain" data-cookieconsent="preferences">
+        var calendlyDiv = document.querySelector('.calendly-placeholder');
+        calendlyDiv.innerHTML = '<div class="calendly-inline-widget" data-url="https://calendly.com/parempipomo?hide_gdpr_banner=1&primary_color=ba3020" style="min-width:320px;height:700px;"></div>';
+        var s = document.createElement("script");
+        s.src = "https://assets.calendly.com/assets/external/widget.js";
+        s.async = true;
+        document.body.appendChild(s);
+      </script>
+
+      <p class="mini-note" style="text-align:center; margin-top: 1rem;">
+        Vinkki: jos lähetät viestin, kerro (1) teema, (2) kesto, (3) päivä ja kaupunki, (4) yleisön koko.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Boss Developer</h3>
+          <p>Ihmislähtöistä ja tieteellisesti optimoitua johtamisen valmennusta — sekä puheenvuoroja, jotka herättävät.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Opi mokaamaan</h4>
+          <ul>
+            <li><a href="#vaihtoehdot">Teemat & versiot</a></li>
+            <li><a href="#hinnat">Hinnat</a></li>
+            <li><a href="#varaa">Varaa / kysy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Yhteystiedot</h4>
+          <p>📧 juho@bossdeveloper.com</p>
+          <p>📱 +358 40 537 7012</p>
+          <p>📍 Helsinki (ja missä vain parempaa johtajuutta tarvitaan)</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Boss Developer. Kaikki oikeudet ja mokat pidätetään.</p>
+        <p><a href="../tietosuojaseloste.html">Tietosuojaseloste</a></p>
+        <!-- Jos sivu on samassa hakemistossa kuin tietosuojaseloste, vaihda href="tietosuojaseloste.html" -->
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <!-- Jos sivu tulee samaan kansioon kuin script.js, vaihda src="script.js" -->
+</body>
+
+</html>
