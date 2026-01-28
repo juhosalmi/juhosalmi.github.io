@@ -433,7 +433,23 @@ a {
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     text-align: left;
+    display: flex;
+    flex-direction: column;
     transition: transform 0.3s ease;
+}
+
+.service-card > :last-child {
+    margin-top: auto;
+}
+
+.service-card .btn-primary,
+.service-card .btn-secondary {
+    align-self: center;
+    width: auto;
+}
+
+.service-card--outlined .service-features {
+    margin-bottom: 1.5rem;
 }
 
 .service-card:hover {
