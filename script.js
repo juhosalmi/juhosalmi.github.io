@@ -144,12 +144,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const modeEl = document.getElementById('pc-mode');
         const participantsEl = document.getElementById('pc-participants');
         const formatEl = document.getElementById('pc-format');
+        const extrasEl = document.getElementById('pc-extras');
         const totalEl = document.getElementById('pc-total');
 
         function updatePrice() {
             const mode = modeEl.value;
             const participants = participantsEl.value;
             const format = formatEl.value;
+            const extras = extrasEl.value;
 
             let base = 1900;
             if (format === 'keynote_workshop') {
@@ -169,12 +171,20 @@ document.addEventListener('DOMContentLoaded', function() {
             } else if (participants === 'xlarge') {
                 modifier += 1000;
             }
+            
+            if (extras === 'tailored') {
+                modifier += 1000;
+            } else if (extras === 'survey') {
+                modifier += 1000;
+            } else if (extras === 'training') {
+                modifier += 4900;
+            }
 
             const total = base + modifier;
             totalEl.textContent = `${total.toLocaleString('fi-FI')} € + ALV`;
         }
 
-        [modeEl, participantsEl, formatEl].forEach(el => {
+        [modeEl, participantsEl, formatEl, extrasEl].forEach(el => {
             el.addEventListener('change', updatePrice);
         });
 
