@@ -327,6 +327,15 @@ a.text-primary {
     font-weight: 400;
 }
 
+.hero-caption-sub {
+    margin-top: -1.5rem;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
 .profile-picture {
     width: 300px;
     height: 300px;
@@ -1230,4 +1239,46 @@ html {
 .calendly-inline-widget {
     min-width: 320px;
     height: 700px;
+}
+
+/* Floating action button – reserve (mobile only) */
+.fab-reserve {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .fab-reserve {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        bottom: calc(1rem + env(safe-area-inset-bottom, 0));
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        padding: 0.875rem 1.75rem;
+        border-radius: 999px;
+        background: var(--primary-color);
+        color: var(--white);
+        font-family: 'Londrina Solid', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-decoration: none;
+        letter-spacing: 0.1rem;
+        box-shadow: 0 4px 16px rgba(186, 48, 32, 0.35),
+                    0 2px 8px rgba(0, 0, 0, 0.25),
+                    0 0 0 1px rgba(0, 0, 0, 0.08);
+        transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .fab-reserve:hover,
+    .fab-reserve:focus {
+        background: #9a2820;
+        color: var(--white);
+        transform: translateX(-50%) scale(1.02);
+    }
+
+    .fab-reserve:active {
+        transform: translateX(-50%) scale(0.98);
+    }
 }
