@@ -538,17 +538,25 @@
   <!-- BOOKING -->
   <section id="varaa" class="contact">
     <div class="container">
-      <h2>Varaa / kysy</h2>
-      <p class="contact-lead">
-        Haluatko varata <strong>Opi mokaamaan</strong> -keynoten? Varaa 30 min kartoitus tai kysy suoraan vapaat päivät.
-      </p>
+      <h2>Varaa keynote</h2>
 
       <div class="calendly-placeholder">
-        <p>
-          Varaustoiminto käyttää Calendly-palvelua, joka lataa sisältöä ulkoisesta lähteestä.
-          Näet kalenterin, kun hyväksyt evästeet. Voit myös olla yhteydessä sähköpostitse
-          <a href="mailto:juho@bossdeveloper.com">juho@bossdeveloper.com</a> tai puhelimitse
-          <a href="tel:+358405377012">+358 40 537 7012</a>.
+        <p class="calendly-placeholder-intro">
+          Varaustoiminto käyttää Calendly-palvelua. Jotta näet varauskalenterin,
+          hyväksy <strong>mieltymys-evästeet (preferences)</strong> evästeasetuksessa tai siirry Calendlyyn.
+        </p>
+        <div class="calendly-placeholder-actions">
+          <a href="https://calendly.com/parempipomo?primary_color=ba3020" class="btn-primary" target="_blank" rel="noopener noreferrer">Varaa suoraan Calendlyssa</a>
+          <button type="button" class="btn-secondary" onclick="typeof Cookiebot !== 'undefined' && Cookiebot.renew();">Muuta evästesetuksia</button>
+        </div>
+        <p class="calendly-placeholder-contact">
+          Tai ota suoraan yhteyttä:
+          <br />
+        <a href="mailto:juho@bossdeveloper.com?subject=Opi%20mokaamaan%20-keynote" class="text-primary" target="_blank">
+          juho@bossdeveloper.com
+        </a>
+        <br />
+        <a href="tel:+358405377012" class="text-primary">+358 40 537 7012</a>
         </p>
       </div>
 
@@ -562,9 +570,6 @@
         document.body.appendChild(s);
       </script>
 
-      <p class="mini-note mini-note--centered mini-note--spaced">
-        Vinkki: jos lähetät viestin, kerro (1) teema, (2) kesto, (3) päivä ja kaupunki, (4) yleisön koko.
-      </p>
     </div>
   </section>
 

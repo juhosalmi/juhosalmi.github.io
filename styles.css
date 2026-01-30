@@ -1206,6 +1206,26 @@ html {
     font-size: 0.95rem;
 }
 
+/* Calendly placeholder when preferences cookies not enabled */
+.calendly-placeholder-intro {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.calendly-placeholder-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+}
+
+.calendly-placeholder-contact {
+    text-align: center;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
 /* Calendly embed sizing moved from inline styles */
 .calendly-inline-widget {
     min-width: 320px;
